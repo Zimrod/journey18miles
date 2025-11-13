@@ -25,26 +25,26 @@ function Nav() {
   }, [cart])
 
   // Get current user session
-  useEffect(() => {
-    const getSession = async () => {
-      const { data: { session } } = await supabase.auth.getSession()
-      setUser(session?.user || null)
-    }
+//   useEffect(() => {
+//     const getSession = async () => {
+//       const { data: { session } } = await supabase.auth.getSession()
+//       setUser(session?.user || null)
+//     }
 
-    getSession()
+//     getSession()
 
     // Listen for auth state changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-      setUser(session?.user || null)
-    })
+    // const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+    //   setUser(session?.user || null)
+    // })
 
-    return () => subscription.unsubscribe()
-  }, [])
+//     return () => subscription.unsubscribe()
+//   }, [])
 
-  const handleSignOut = async () => {
-    await supabase.auth.signOut()
-    setIsUserMenuOpen(false)
-  }
+//   const handleSignOut = async () => {
+//     await supabase.auth.signOut()
+//     setIsUserMenuOpen(false)
+//   }
 
   const truncateEmail = (email) => {
     if (!email) return ''
@@ -127,7 +127,7 @@ function Nav() {
                 <div className="absolute right-0 mt-2 w-36 bg-white border border-gray-200 rounded-lg shadow-md">
                   {user ? (
                     <button
-                      onClick={handleSignOut}
+                    //   onClick={handleSignOut}
                       className="flex items-center w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-lime-100 transition-colors"
                     >
                       <FontAwesomeIcon icon={faSignOutAlt} className="w-4 h-4 mr-2" />
