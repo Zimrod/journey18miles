@@ -4,12 +4,12 @@ import ReactMarkdown from 'react-markdown'
 const PRIVACY_POLICY = `
 # Consumer Data Privacy Policy
 
-**Last Updated: ${new Date().toLocaleDateString()}**
+**Last Updated: ${new Date().toUTCString().split(' ').slice(1, 4).join(' ')}**
 
 ## 1. Introduction
 
 ### 1.1 Purpose
-At Journey of 18 Miles, we are committed to protecting the privacy and security of our customers' personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and purchase our African children's stories.
+At Journey of 18 Miles, we are committed to protecting the privacy and security of our customers' personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
 
 ### 1.2 Scope
 This policy applies to all personal data collected through our website, email communications, and any related services, sales, marketing, or events.
@@ -49,7 +49,6 @@ We use your information to:
 ### 3.2 For Marketing Communications
 With your consent, we may:
 - Send information about new stories, authors, and promotions
-- Share educational content about African children's literature
 - Inform you about special events and author features
 
 ### 3.3 To Improve Our Services
@@ -74,7 +73,6 @@ Where required by law, we obtain your consent before processing your personal da
 ### 5.1 Service Providers
 We may share your information with:
 - Payment processors (PayPal, Stripe, etc.)
-- Shipping carriers for physical book delivery
 - Email service providers for communications
 - IT and cloud storage providers
 
@@ -115,50 +113,42 @@ You have the right to:
 ### 8.2 Exercising Your Rights
 To exercise any of these rights, please contact us at **admin@journey18miles.com**. We respond to all legitimate requests within one month.
 
-## 9. Children's Privacy
+## 9. Cookies and Tracking Technologies
 
-### 9.1 Our Commitment
-We are committed to protecting children's privacy. Our website is not directed at children under 13, and we do not knowingly collect personal information from children without parental consent.
-
-### 9.2 Parental Controls
-Parents or guardians who believe we might have collected information from a child without consent may contact us to have the information deleted.
-
-## 10. Cookies and Tracking Technologies
-
-### 10.1 Types of Cookies We Use
+### 9.1 Types of Cookies We Use
 - Essential cookies (necessary for website functionality)
 - Analytics cookies (to understand how visitors use our site)
 - Marketing cookies (to deliver relevant advertisements)
 
-### 10.2 Cookie Management
+### 9.2 Cookie Management
 You can set your browser to refuse all or some cookies, or to alert you when websites set or access cookies.
 
-## 11. Data Security
+## 10. Data Security
 
-### 11.1 Protection Measures
+### 10.1 Protection Measures
 We implement appropriate security measures to protect your personal data from unauthorized access, alteration, disclosure, or destruction.
 
-### 11.2 Security Practices
+### 10.2 Security Practices
 These measures include:
 - SSL encryption for data transmission
 - Secure payment processing
 - Regular security assessments
 - Limited access to personal data on a need-to-know basis
 
-## 12. Policy Updates
+## 11. Policy Updates
 
-### 12.1 Changes to This Policy
+### 11.1 Changes to This Policy
 We may update this privacy policy from time to time. The updated version will be indicated by a revised "Last Updated" date and will be effective immediately.
 
-### 12.2 Notification of Changes
+### 11.2 Notification of Changes
 We will notify you of any material changes by posting the new policy on our website and, where appropriate, through email notification.
 
-## 13. Contact Us
+## 12. Contact Us
 
 For questions about this privacy policy or our data practices:
 **Journey of 18 Miles**  
 Email: admin@journey18miles.com  
-Phone: +267 7166 3185  
+Phone: +267 7166 3185 / +263 777 709 534  
 Business Hours: Monday-Friday, 8:00 AM - 5:00 PM Botswana Time
 `;
 
@@ -171,7 +161,7 @@ export default function PrivacyPolicy() {
           Consumer Data Privacy Policy
         </h1>
         <p className="text-gray-600 text-sm">
-          Last Updated: {new Date().toLocaleDateString()}
+          Last Updated: {new Date().toUTCString().split(' ').slice(1, 4).join(' ')}
         </p>
       </div>
 

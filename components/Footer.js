@@ -29,6 +29,10 @@ function Footer() {
                 <span className="text-gray-700">+267 7166 3185</span>
               </div>
               <div className="flex items-center space-x-3">
+                <FontAwesomeIcon icon={faPhone} className="w-5 text-palette-primary" />
+                <span className="text-gray-700">+263 777 709 534</span>
+              </div>
+              <div className="flex items-center space-x-3">
                 <FontAwesomeIcon icon={faEnvelope} className="w-5 text-palette-primary" />
                 <span className="text-gray-700">admin@journey18miles.com</span>
               </div>
@@ -39,9 +43,9 @@ function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-900">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/about" className="text-gray-700 hover:text-palette-primary transition">About Us</a></li>
+              {/* <li><a href="/about" className="text-gray-700 hover:text-palette-primary transition">About Us</a></li> */}
               <li><a href="/contact" className="text-gray-700 hover:text-palette-primary transition">Contact Us</a></li>
-              <li><a href="/faq" className="text-gray-700 hover:text-palette-primary transition">FAQ</a></li>
+              <li><a href="#faq-section" className="text-gray-700 hover:text-palette-primary transition">FAQ</a></li>
             </ul>
           </div>
 
@@ -64,11 +68,6 @@ function Footer() {
               <h4 className="font-medium mb-1">Customer Service Procedures</h4>
               <p className="text-sm text-gray-600">Contact information for inquiries and complaints</p>
             </a>
-
-            <a href="/documents/writer-guidelines" className="text-gray-700 hover:text-palette-primary transition block p-3 bg-green-100 rounded-lg shadow-sm hover:shadow-md">
-              <h4 className="font-medium mb-1">Writer Submission Guidelines</h4>
-              <p className="text-sm text-gray-600">How to submit your stories for publication</p>
-            </a>
             
             <a href="/documents/return-refund-policy" className="text-gray-700 hover:text-palette-primary transition block p-3 bg-green-100 rounded-lg shadow-sm hover:shadow-md">
               <h4 className="font-medium mb-1">Return/Refund Policy</h4>
@@ -88,6 +87,21 @@ function Footer() {
             <a href="/documents/terms-conditions" className="text-gray-700 hover:text-palette-primary transition block p-3 bg-green-100 rounded-lg shadow-sm hover:shadow-md">
               <h4 className="font-medium mb-1">Terms & Conditions</h4>
               <p className="text-sm text-gray-600">Website usage terms and conditions</p>
+            </a>
+
+            <a href="/documents/buyers-guidelines" className="text-gray-700 hover:text-palette-primary transition block p-3 bg-green-100 rounded-lg shadow-sm hover:shadow-md">
+              <h4 className="font-medium mb-1">Buyers Guidelines</h4>
+              <p className="text-sm text-gray-600">Find the product or service you need</p>
+            </a>
+
+            <a href="/documents/sellers-guidelines" className="text-gray-700 hover:text-palette-primary transition block p-3 bg-green-100 rounded-lg shadow-sm hover:shadow-md">
+              <h4 className="font-medium mb-1">Sellers Guidelines</h4>
+              <p className="text-sm text-gray-600">How to set your product match preferences</p>
+            </a>
+
+            <a href="/documents/facilitators-guidelines" className="text-gray-700 hover:text-palette-primary transition block p-3 bg-green-100 rounded-lg shadow-sm hover:shadow-md">
+              <h4 className="font-medium mb-1">Facilitator Guidelines</h4>
+              <p className="text-sm text-gray-600">Make a commission for every transaction</p>
             </a>
           </div>
         </div>

@@ -4,97 +4,116 @@ import ReactMarkdown from 'react-markdown'
 const RETURN_REFUND_POLICY = `
 # Return & Refund Policy
 
-**Last Updated: ${new Date().toLocaleDateString()}**
+**Last Updated: ${new Date().toUTCString().split(' ').slice(1, 4).join(' ')}**
 
-## 1. Digital Products Refund Policy
+## 1. Subscription Services Refund Policy
 
-### 1.1 Instant Download Digital Books
-All digital book purchases are **non-refundable** once the download link has been accessed or 24 hours after purchase, whichever comes first. Since digital products cannot be "returned" and are susceptible to duplication, we do not offer refunds for digital book purchases after delivery.
+### 1.1 Seller Subscriptions
+**Launch Offer (First 6 Months):**
+- **$5 One-Time Payment**: Fully refundable if no matches are made within 90 days
+- **Subscription Activation**: First successful match triggers monthly subscription
+- **Monthly Subscriptions**: Refundable only if no matches occur in the first 30 days of each billing cycle
 
-### 1.2 Technical Issues
-If you experience technical issues with your digital download:
-- Contact us within 24 hours of purchase at **admin@journey18miles.com**
-- We will work with you to resolve the issue
-- If we cannot resolve the issue within 48 hours, we may issue a refund at our discretion
+**Standard Subscriptions:**
+- Refund requests must be made within 14 days of subscription start
+- Partial refunds may be issued for unused time if no matches were made
+- Once matches occur, subscriptions become non-refundable
 
-## 2. Print-on-Demand Physical Books
+### 1.2 Provider Subscriptions
+**Performance-Based Guarantee:**
+- If we deliver less than 70% of promised transaction volume for 3 consecutive months, you qualify for a 50% refund or account credit
+- Setup and verification fees are non-refundable once facility approval is completed
+- Monthly subscriptions are refundable on a pro-rata basis if we fail to deliver adequate buyer traffic
 
-### 2.1 Return Eligibility
-We accept returns of physical books within **14 days** of delivery under the following conditions:
-- Book arrived damaged or defective
-- Wrong book was sent
-- Printing quality is unacceptable
+### 1.3 Match Credits
+- Match credits never expire and are transferable between categories
+- Used credits are non-refundable
+- Unused credits can be transferred to other sellers but not refunded for cash
 
-### 2.2 Non-Returnable Items
-We cannot accept returns for:
-- Books that have been written in, highlighted, or otherwise marked
-- Books with damaged spines or covers due to customer handling
-- Books that show signs of wear beyond normal inspection
+## 2. Transaction Disputes & Mediation
 
-### 2.3 Return Process
-To initiate a return:
-1. Contact us within 14 days of delivery at **admin@journey18miles.com**
-2. Provide your order number and photos of the issue
-3. We will provide return instructions if eligible
-4. Return shipping costs are the responsibility of the customer
+### 2.1 Safe Space Transactions
+For transactions conducted at our verified safe spaces:
+- Basic mediation services are included
+- Platform liability is limited to commission refunds (1-2% of transaction value)
+- We do not refund the actual product purchase amount
+- Dispute resolution focuses on fair process, not product quality judgments
 
-### 2.4 Refunds for Physical Books
-Once we receive and inspect the returned book:
-- Refunds will be processed within 5-7 business days
-- The refund amount will exclude:
-  - Original shipping costs
-  - Bank processing fees (2.5%-5% transaction fees)
-  - Any restocking fees if applicable
-- Refunds will be issued to the original payment method
+### 2.2 Direct Transactions
+For buyer-seller transactions conducted without safe spaces:
+- Platform provides limited guidance only
+- No refunds or mediation services offered
+- Users transact at their own risk
+- We recommend using safe spaces for high-value items
 
-## 3. Bank Processing Fees
+## 3. Buyer Protection
 
-### 3.1 Non-Refundable Fees
-Please note that bank and payment processing fees (typically 2.5%-5% of the transaction amount) are **non-refundable** in any circumstance. These fees are charged by financial institutions and cannot be recovered by us.
+### 3.1 Platform Services
+- Buyer matching and notification services are completely free
+- No refunds necessary as no payments are required from buyers
 
-### 3.2 Refund Calculation Example
-If you purchased a book for \$20:
-- Bank processing fee (approx. 4%): \$0.80
-- Maximum refund amount: \$19.20
-- This amount may be further reduced by shipping costs if applicable
+### 3.2 Safe Space Usage Fees
+- Fees for using verified safe spaces are non-refundable once booked
+- Cancellations must be made 24 hours in advance for credit toward future use
+- No-shows forfeit the space usage fee
 
-## 4. How to Request a Refund or Return
+## 4. Bank & Payment Processing Fees
 
-### 4.1 Contact Information
-Email: **admin@journey18miles.com**  
-Phone: **+267 7166 3185**  
-Response Time: Within 24-48 business hours
+### 4.1 Non-Refundable Fees
+All bank and payment processing fees (2.5%-5% of transaction amounts) are **non-refundable** in any circumstance. These are third-party financial institution charges beyond our control.
 
-### 4.2 Required Information
-When contacting us, please provide:
-- Your order number
-- Product name(s)
-- Reason for return/refund request
-- Photos (for physical book issues)
+### 4.2 Refund Calculations
+When refunds are issued:
+- Original transaction fees are deducted
+- Refunds are issued to original payment methods
+- Processing time: 5-10 business days
 
-## 5. Exceptional Circumstances
+## 5. Special Circumstances
 
-### 5.1 Duplicate Charges
-If you believe you were charged twice for the same order:
-- Contact us immediately
-- We will investigate and refund any duplicate charges within 24 hours
+### 5.1 Platform Service Interruption
+If our platform experiences extended downtime (more than 48 consecutive hours):
+- Affected users receive service credit extensions
+- Pro-rata refunds considered for premium subscribers
 
-### 5.2 Unauthorized Purchases
-If you believe your payment method was used without authorization:
-- Contact us immediately
-- We will work with you and your financial institution to resolve the issue
+### 5.2 Duplicate Charges
+- Report duplicate charges within 7 days
+- We investigate and refund duplicates within 24 hours
+- Provide transaction IDs for verification
 
-## 6. Policy Changes
+### 5.3 Unauthorized Account Activity
+- Report suspicious activity immediately
+- We work with financial institutions to resolve issues
+- Account security is shared responsibility
 
-We reserve the right to modify this refund policy at any time. Changes will be effective immediately upon posting to our website.
+## 6. How to Request Refunds
 
-## 7. Contact Us
+### 6.1 Contact Information
+**Journey of 18 Miles Platform Support**  
+Email: support@journey18miles.com  
+Phone: [+267 7166 3185]  
+Response Time: 24-48 business hours
 
-For any questions about this policy:
-**Journey of 18 Miles**  
-Email: admin@journey18miles.com  
-Phone: +267 7166 3185  
-Business Hours: Monday-Friday, 8:00 AM - 5:00 PM Botswana Time
+### 6.2 Required Information
+- Your account email/username
+- Subscription or transaction ID
+- Date of purchase/transaction
+- Detailed reason for refund request
+- Supporting evidence (screenshots, etc.)
+
+## 7. Policy Updates
+
+We reserve the right to modify this policy with 30 days notice. Current subscribers maintain the policy terms active at their subscription start date.
+
+## 8. Regional Compliance
+
+This policy complies with consumer protection regulations in our operating regions across Africa. Local laws may provide additional protections in specific jurisdictions.
+
+---
+
+**Need Help?**  
+Contact our support team at support@journey18miles.com for any questions about this policy or to discuss your specific situation.
+
+*Journey of 18 Miles - Building Africa's Most Trusted Trading Platform*
 `;
 
 export default function ReturnRefundPolicy() {
@@ -106,7 +125,7 @@ export default function ReturnRefundPolicy() {
           Return & Refund Policy
         </h1>
         <p className="text-gray-600 text-sm">
-          Last Updated: {new Date().toLocaleDateString()}
+          Last Updated: {new Date().toUTCString().split(' ').slice(1, 4).join(' ')}
         </p>
       </div>
 

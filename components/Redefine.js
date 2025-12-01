@@ -46,7 +46,7 @@ export default function Redefine() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
-              href="/documents/writer-guidelines"
+              href=""
               className="bg-brown-500 text-black px-8 py-3 rounded-lg font-semibold transition-colors duration-200 shadow-md hover:shadow-xl"
             >
               Download Specifik

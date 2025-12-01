@@ -14,12 +14,12 @@ export default function HeroSection() {
             <div className="text-center md:text-left">
               {/* Main Heading */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-purple-900 mb-6 leading-tight">
-                Never Miss Your Perfect Deal in Telegram Groups
+                The Smartest Way to Buy, Sell & Trade Safely
               </h1>
               
               {/* Subheading */}
               <p className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-8 leading-relaxed">
-                Specifik filters thousands of messages to find exactly what you're looking for. Set your preferences once and get instant notifications when matching products appear.
+                Specifik filters thousands of Telegram messages to connect buyers & sellers who can transact in safe spaces. They can opt to transact without middlemen & agents.
               </p>
               
               {/* Call to Action Buttons */}

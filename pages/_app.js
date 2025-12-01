@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
       />
       <Component {...pageProps} />
       <BackToTop />
-      <ChatbotWidget />
+      {/* <ChatbotWidget /> */}
     </Layout>
   )
 }
