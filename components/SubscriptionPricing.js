@@ -155,7 +155,7 @@ export default function SubscriptionPricing() {
     monthly: [
       {
         name: 'Starter',
-        price: '$7',
+        price: '$10',
         description: 'Great for small businesses',
         features: [
           '1 Telegram group',
@@ -170,7 +170,7 @@ export default function SubscriptionPricing() {
       },
       {
         name: 'Professional',
-        price: '$19',
+        price: '$20',
         description: 'Ideal for growing businesses',
         features: [
           '3 Telegram groups',
@@ -187,7 +187,7 @@ export default function SubscriptionPricing() {
       },
       {
         name: 'Enterprise',
-        price: '$49',
+        price: '$50',
         description: 'For high-volume operations',
         features: [
           '10 Telegram groups',
