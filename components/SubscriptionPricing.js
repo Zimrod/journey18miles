@@ -301,7 +301,7 @@ export default function SubscriptionPricing() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Choose Your Plan
+            Choose Your Super Plan
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
             Scale your Telegram group management with our flexible pricing plans. 
