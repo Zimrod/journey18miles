@@ -165,7 +165,7 @@ export default function SubscriptionPricing() {
           'Priority email support',
           'Custom preferences'
         ],
-        cta: 'Choose Plan',
+        cta: 'Choose Bundle',
         popular: false
       },
       {
@@ -182,7 +182,7 @@ export default function SubscriptionPricing() {
           'API access',
           'Custom integrations'
         ],
-        cta: 'Choose Plan',
+        cta: 'Choose Bundle',
         popular: true
       },
       {
@@ -200,83 +200,13 @@ export default function SubscriptionPricing() {
           'White-label options',
           'Custom development'
         ],
-        cta: 'Choose Plan',
+        cta: 'Choose Bundle',
         popular: false
       },
       {
         name: 'Custom',
         price: 'Let’s talk',
         description: 'Tailored to your exact needs',
-        features: [
-          'Custom message filtering limits',
-          'Custom match limits (up to unlimited)',
-          'Priority or dedicated support options',
-          'Advanced analytics & reporting',
-          'Bespoke integrations & automations',
-          'Service-level agreements (SLA)',
-          'Account manager',
-          'On-demand scaling'
-        ],
-        cta: 'Request Quote',
-        popular: false
-      }
-    ],
-  
-    yearly: [
-      {
-        name: 'Starter',
-        price: '$70', // Equivalent to $4/month
-        description: 'Great for small businesses',
-        features: [
-          '1 Telegram group',
-          '2 group members',
-          '300 messages per month',
-          '20 matches per month',
-          'Priority email support',
-          'Custom preferences'
-        ],
-        cta: 'Choose Plan',
-        popular: false
-      },
-      {
-        name: 'Professional',
-        price: '$200', // Equivalent to $12/month
-        description: 'Ideal for growing businesses',
-        features: [
-          '3 Telegram groups',
-          '6 group members',
-          '1,500 messages per month',
-          '80 matches per month',
-          'Real-time analytics dashboard',
-          'Priority support',
-          'API access',
-          'Custom integrations'
-        ],
-        cta: 'Choose Plan',
-        popular: true
-      },
-      {
-        name: 'Enterprise',
-        price: '$500', // Equivalent to $24/month
-        description: 'For high-volume operations',
-        features: [
-          '10 Telegram groups',
-          '20 group members',
-          '3,600 messages per month',
-          '200 matches per month',
-          'Advanced analytics & reporting',
-          '24/7 dedicated support',
-          'Full API access',
-          'White-label options',
-          'Custom development'
-        ],
-        cta: 'Choose Plan',
-        popular: false
-      },
-      {
-        name: 'Custom',
-        price: 'Let’s talk',
-        description: 'Tailored to your exact needs (yearly contract)',
         features: [
           'Custom message filtering limits',
           'Custom match limits (up to unlimited)',
@@ -301,34 +231,11 @@ export default function SubscriptionPricing() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Choose Your Plan
+            Choose Your Monthly Bundle
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
             Scale your Telegram group management with our flexible pricing plans. 
           </p>
-
-          {/* Billing Toggle */}
-          <div className="flex items-center justify-center space-x-4">
-            <span className={`text-sm font-medium ${billingPeriod === 'monthly' ? 'text-gray-900' : 'text-gray-500'}`}>
-              Monthly
-            </span>
-            <button
-              onClick={() => setBillingPeriod(billingPeriod === 'monthly' ? 'yearly' : 'monthly')}
-              className="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
-            >
-              <span
-                className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
-                  billingPeriod === 'yearly' ? 'translate-x-6' : 'translate-x-1'
-                }`}
-              />
-            </button>
-            <span className={`text-sm font-medium ${billingPeriod === 'yearly' ? 'text-gray-900' : 'text-gray-500'}`}>
-              Yearly
-              <span className="ml-1 px-2 py-1 text-xs bg-green-100 text-green-800 rounded-full">
-                Save up to 17%
-              </span>
-            </span>
-          </div>
         </div>
 
         {/* Pricing Cards */}
@@ -356,11 +263,6 @@ export default function SubscriptionPricing() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{plan.name}</h3>
                 <div className="flex items-baseline justify-center mb-2">
                   <span className="text-4xl font-bold text-gray-900">{plan.price}</span>
-                  {billingPeriod === 'monthly' && plan.name !== 'Custom' ? (
-                    <span className="text-gray-500 ml-2">/month</span>
-                  ) : billingPeriod === 'yearly' && plan.name !== 'Custom' ? (
-                    <span className="text-gray-500 ml-2">/year</span>
-                  ) : null}
                 </div>
                 {plan.originalPrice && (
                   <p className="text-sm text-gray-500 line-through">
@@ -429,8 +331,8 @@ export default function SubscriptionPricing() {
               </button>
               <h2 className="text-xl font-bold mb-2">Confirm Your Plan</h2>
               <p className="text-gray-700 mb-4">
-                You're about to subscribe to the <strong>{selectedPlan.name}</strong> plan for{' '}
-                {selectedPlan.price} {billingPeriod === 'monthly' ? 'per month' : 'per year'}.
+                You're about to subscribe to the <strong>{selectedPlan.name}</strong> bundle for{' '}
+                {selectedPlan.price}.
               </p>
               <button
                 onClick={handleProceedToPayment}
