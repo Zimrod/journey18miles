@@ -170,13 +170,13 @@ export default function SubscriptionPricing() {
       },
       {
         name: 'Professional',
-        price: '$20',
+        price: '$25',
         description: 'Ideal for growing businesses',
         features: [
           '3 Telegram groups',
           '6 group members',
-          '1,500 messages per month',
-          '80 matches per month',
+          '1,200 messages per month',
+          '60 matches per month',
           'Real-time analytics dashboard',
           'Priority support',
           'API access',
@@ -187,7 +187,7 @@ export default function SubscriptionPricing() {
       },
       {
         name: 'Enterprise',
-        price: '$50',
+        price: '$60',
         description: 'For high-volume operations',
         features: [
           '10 Telegram groups',
